@@ -25,7 +25,7 @@ function processOutput(json) {
   if (obj.pubKey) {
     var pk;
     if (program.bch) {
-      pk = new PublicKey(obj.pubKey);
+      pk = new PublicKeyBCH(obj.pubKey);
       obj.address = pk.toAddress(network).toString();
     } else {
       pk = new PublicKey(obj.pubKey);
@@ -43,7 +43,6 @@ function main() {
   });
   emitter.on('data', processOutput);
   exporter.start();
-  wstream.end();
 }
 
 main();
