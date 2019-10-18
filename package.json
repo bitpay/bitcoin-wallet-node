@@ -39,7 +39,8 @@
   "dependencies": {
     "nan": "^2.14.0",
     "commander": "*",
-    "bitcore-lib": "^8.5.1"
+    "bitcore-lib": "^8.5.1",
+    "bitcore-lib-cash": "^8.5.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
